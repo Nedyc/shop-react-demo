@@ -1,38 +1,180 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: ComicNeue;
+  src: url('./fonts/ComicNeue-Regular.ttf');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: Lobster;
+  src: url('./fonts/Lobster-Regular.ttf');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body{
+  font-family: ComicNeue;
+  overflow-x: hidden;
+}
+
+ul{
+  list-style: none;
+}
+
+.vh-100{
+  height: 100vh;
+}
+
+.black-bg-opacity{
+  background-color: rgba(0, 0, 0, .4);
+}
+
+.cursor-pointer{
+  cursor: pointer
+}
+
+.cursor-pointer:hover{
+  opacity: .5;
+}
+
+.bg-primary,
+a.bg-secondary:hover,
+#admin-area nav a:hover,
+#admin-area nav a.selected{
+  background-color: #F55D59 !important;
+}
+
+.text-primary{
+color: #F55D59 !important;
+}
+
+.bg-secondary,
+button.bg-primary:hover{
+  background-color: #282933 !important;
+}
+
+.font-small{
+  font-size: 12px;
+}
+
+h1{
+  font-family: Lobster;
+}
+
+#home{
+  background: #e96443;
+  background: -webkit-linear-gradient(to right, #904e95, #e96443);
+  background: linear-gradient(to right, #904e95, #e96443);
+}
+
+#top-logo{
+  width: 80px;
+  height: 80px;
+  background-position: center;
+  background-size: cover;
+  background-image: url("./images/Logo.png");
+}
+
+#admin-area #top-logo{
+  width: 40px;
+  height: 40px;
+}
+
+#login-logo{
+  background-position: center;
+  background-size: 50% auto;
+  background-repeat: no-repeat;
+  background-image: url("./images/Logo.png");
+}
+
+#text-logo{
+  font: 20px;
+}
+
+.counter-box{
+  font-size: 60px;
+  background-color: rgba(255, 255, 255, .1);
+}
+
+#home footer .rounded{
+  background-color: rgba(255, 255, 255, .1);
+  padding: 10px;
+}
+
+#home header svg{
+  font-size: 20px;
+}
+
+#emplyees header{
+  font-size: 21.5px;
+}
+
+button:disabled,
+button[disabled]
+button:disabled:hover,
+button[disabled]:hover{
+  background-color: lightgray !important;
+}
+
+#search:focus{
+  outline: none;
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#itemForm.not-vis{
+  height: 0;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+  border: 0 !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .counter-box{
+    font-size: 30px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media only screen and (max-width: 576px) {
+  .counter-box{
+    font-size: 20px;
+    padding: 10px 0 !important;
+  }
 }
 
-.App-link {
-  color: #61dafb;
+
+
+
+
+/********CSS LOADER********/
+.lds-dual-ring {
+display: inline-block;
+width: 80px;
+height: 80px;
 }
 
-@keyframes App-logo-spin {
-  from {
+.small.lds-dual-ring {
+width: 30px;
+height: 30px;
+}
+
+.lds-dual-ring:after {
+content: " ";
+display: block;
+width: 64px;
+height: 64px;
+margin: 8px;
+border-radius: 50%;
+border: 6px solid #fff;
+border-color: #fff transparent #fff transparent;
+animation: lds-dual-ring 1.2s linear infinite;
+}
+
+
+@keyframes lds-dual-ring {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  100% {
     transform: rotate(360deg);
   }
 }
+
+/********CSS LOADER********/
