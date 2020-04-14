@@ -14,7 +14,7 @@ In order to use this app you need to download the latest versions of:<br />
 
 After the installation open gitbash and clone the project running this command:
 ```
-git clone https://github.com/Nedyc/ISS-react-demo-app.git shop-app
+git clone https://github.com/Nedyc/shop-react-demo.git shop-app
 ```
 
 Then access the folder
@@ -50,9 +50,11 @@ The api used in this app are stored on http://us-central1-test-b7665.cloudfuncti
 <br />
 
 # Components structure
-Components are placed in the **/components** folder and structured in 3 main folders: backoffice, frontoffice and common (such as aler, loader, modal...)
+Components are placed in the **/components** folder and structured in 3 main subfolders: backoffice, frontoffice and common (such as aler, loader, modal...)
+<br />
 
 # App sections
+This is how the project looks like
 ## Home
 ![ScreenShot-1](http://www.shamancake.com/github-2/1.png)
 A fake homepage with a countdown components
